@@ -43,6 +43,6 @@ scratch. With just 5 epochs, the model got 81% accuracy.</p>
 ### Model Evaluation
 <p align="justify">The CNN model created using transfer learning with
 ResNet101 architecture was trained for 5 epochs, and the final model produced an
-accuracy of 81% on test data. The model correctly predicted breeds for 680 images out of 836 total images.</p>
+accuracy of 82% on test data. The model correctly predicted breeds for 692 images out of 836 total images.</p>
 
-**Accuracy on test data: 81% (680/836)**
+**Test Accuracy: 82% (692/836))**
