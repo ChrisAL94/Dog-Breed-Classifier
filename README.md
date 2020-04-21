@@ -1,6 +1,6 @@
 [//]: # (Image References)
 
-[image1]: ./images/sample_dog_output.png "Sample Output"
+
 [image2]: ./images/vgg16_model.png "VGG-16 Model Layers"
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
@@ -16,8 +16,6 @@ The goal of the project is to build a machine learning model that can be used wi
     If supplied an image of a human, the code will identify the resembling dog breed.
 
 For performing this multiclass classification, we can use Convolutional Neural Network to solve the problem.The solution involves three steps. First, to detect human images, we can use existing algorithm like OpenCV’s implementation of Haar feature based cascade classifiers. Second, to detect dog-images we will use a pretrained VGG16 model. Finally, after the image is identified as dog/human, we can pass this image to an CNN model which will process the image and predict the breed that matches the best out of 133 breeds. 
-
-![Sample Output][image1]
 
 ### CNN model created from scratch
 <p align="justify">I have built a CNN model from scratch to solve the problem. The model has 3
@@ -38,7 +36,7 @@ to add a fully connected layer to produce 133-dimensional output (one for each
 dog category). The model performed extremely well when compared to CNN from
 scratch. With just 5 epochs, the model got 81% accuracy.</p>
 
-![Sample output](./sample_output.PNG) 
+[image1]: ./images/sample_dog_output.png "Sample Output"
 
 ### Model Evaluation
 <p align="justify">The CNN model created using transfer learning with
@@ -46,3 +44,16 @@ ResNet101 architecture was trained for 5 epochs, and the final model produced an
 accuracy of 82% on test data. The model correctly predicted breeds for 692 images out of 836 total images.</p>
 
 **Test Accuracy: 82% (692/836))**
+
+## Software and Libraries
+
+This project uses the following software and Python libraries:
+
+* [Python](https://www.python.org/downloads/release/python-364/)
+* [NumPy](http://www.numpy.org/)
+* [pandas](https://pandas.pydata.org/)
+* [matplotlib](https://matplotlib.org/)
+* [PyTorch](https://pytorch.org/)
+* [Pillow](https://pillow.readthedocs.io/en/stable/)
+
+
