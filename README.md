@@ -12,8 +12,8 @@
 
 The goal of the project is to build a machine learning model that can be used within web app to process real-world, user-supplied images. The algorithm has to perform two tasks:
 
-    Given an image of a dog, the algorithm will identify an estimate of the canine’s breed.
-    If supplied an image of a human, the code will identify the resembling dog breed.
+   1. Given an image of a dog, the algorithm will identify an estimate of the canine’s breed.
+   2. If supplied an image of a human, the code will identify the resembling dog breed.
 
 For performing this multiclass classification, we can use Convolutional Neural Network to solve the problem.The solution involves three steps. First, to detect human images, we can use existing algorithm like OpenCV’s implementation of Haar feature based cascade classifiers. Second, to detect dog-images we will use a pretrained VGG16 model. Finally, after the image is identified as dog/human, we can pass this image to an CNN model which will process the image and predict the breed that matches the best out of 133 breeds. 
 
@@ -34,9 +34,7 @@ which is pre-trained on ImageNet dataset, the architecture is 101 layers deep. T
 last convolutional output of Resnet101 is fed as input to our model. We only need
 to add a fully connected layer to produce 133-dimensional output (one for each
 dog category). The model performed extremely well when compared to CNN from
-scratch. With just 5 epochs, the model got 81% accuracy.</p>
 
-[image1]: ./images/sample_dog_output.png "Sample Output"
 
 ### Model Evaluation
 <p align="justify">The CNN model created using transfer learning with
