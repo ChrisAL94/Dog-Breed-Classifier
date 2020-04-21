@@ -53,5 +53,5 @@ This project uses the following software and Python libraries:
 * [matplotlib](https://matplotlib.org/)
 * [PyTorch](https://pytorch.org/)
 * [Pillow](https://pillow.readthedocs.io/en/stable/)
-
+* [OpenCV](https://opencv.org/)
 
